@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Login"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firebase Project"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginBottom="120dp"
+        android:textAlignment="center">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white">
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_senha"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white">
+    </EditText>
+
+    <CheckBox
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Mostrar senha"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ckb_mostrar_senha">
+
+    </CheckBox>
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@android:color/holo_red_light"
+        android:text="LOGIN"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_login">
+
+    </Button>
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:background="#30ffffff"
+        android:textColor="@color/white"
+        android:text="REGISTRAR"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_registrar">
+
+    </Button>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginProgressBar"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp">
+
+    </ProgressBar>
+
+
+</LinearLayout>
